@@ -383,6 +383,7 @@ ul {
     letter-spacing: 4px;
     color: var(--color-brand-blue);
     font-weight: 800;
+    margin-bottom: 0.5rem; /* Pull divider closer */
 }
 
 .divider {
@@ -390,7 +391,11 @@ ul {
     height: 4px;
     background: linear-gradient(90deg, var(--color-brand-blue), var(--color-accent-green));
     border-radius: 4px;
-    margin: 1.5rem auto;
+    margin: 0.5rem auto 1rem auto; /* Tighten spacing above and below divider */
+}
+
+.section-header p {
+    margin-top: 0;
 }
 
 /* ==========================================================================

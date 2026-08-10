@@ -1279,4 +1279,31 @@ footer {
     .lead-text {
         font-size: 1.2rem;
     }
+    
+    .review-card {
+        width: 240px;
+        padding: 1rem;
+    }
+    
+    .review-card h4 {
+        font-size: 0.95rem;
+    }
+    
+    .review-card p {
+        font-size: 0.8rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .review-card .stars {
+        font-size: 0.75rem;
+        margin-bottom: 0.25rem;
+    }
+    
+    .review-card.highlight-card {
+        transform: scale(1) translateY(-10px);
+    }
+    
+    .reviews-section {
+        padding: 3rem 0;
+    }
 }

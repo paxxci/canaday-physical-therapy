@@ -1248,4 +1248,17 @@ footer {
     .about-two-col {
         text-align: center;
     }
+    
+    .section-header h2 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    
+    .service-card {
+        padding: 1.5rem;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
 }

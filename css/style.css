@@ -1281,17 +1281,17 @@ footer {
     }
     
     .review-card {
-        width: 240px;
-        padding: 1rem;
+        width: 200px;
+        padding: 0.8rem;
     }
     
     .review-card h4 {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
     
     .review-card p {
-        font-size: 0.8rem;
-        margin-bottom: 0.75rem;
+        font-size: 0.75rem;
+        margin-bottom: 0.5rem;
     }
     
     .review-card .stars {

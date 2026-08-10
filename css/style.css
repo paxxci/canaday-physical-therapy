@@ -1196,7 +1196,7 @@ footer {
     }
     
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
     
     .hero-buttons {
@@ -1208,21 +1208,33 @@ footer {
     }
     
     /* Mobile Layout Optimizations */
+    .nav-container {
+        justify-content: center;
+    }
+    
+    .hamburger {
+        position: absolute;
+        right: 1.5rem;
+    }
+    
     .section-padding {
-        padding: 4rem 0;
+        padding: 3rem 0;
     }
     
     .hero {
-        padding: 6rem 0 3rem;
+        padding: 5rem 0 2rem;
+        min-height: auto; /* Let it shrink if needed to keep buttons visible */
     }
     
     .hero-bg-text {
         font-size: 15vw;
         letter-spacing: 2px;
+        top: 35%; /* Move up behind the brain */
     }
     
     .hero-brain-img {
-        max-width: 250px;
+        max-width: 180px; /* Smaller brain to save vertical space */
+        margin-bottom: 1rem;
     }
     
     .hero-buttons .btn {

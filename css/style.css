@@ -1306,4 +1306,14 @@ footer {
     .reviews-section {
         padding: 3rem 0;
     }
+    
+    .about-overlap-content {
+        width: 100%;
+        padding-left: 0;
+    }
+    
+    .about-main-headline {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
 }

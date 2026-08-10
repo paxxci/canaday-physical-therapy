@@ -1227,7 +1227,7 @@ footer {
     }
     
     .hero-bg-text {
-        font-size: 15vw;
+        font-size: 11vw; /* Shrunk from 15vw to fit on screen */
         letter-spacing: 2px;
         top: 35%; /* Move up behind the brain */
     }
@@ -1241,6 +1241,8 @@ footer {
         width: 100%;
         margin-right: 0;
         margin-bottom: 1rem;
+        padding: 12px 24px; /* Shrunk button padding for mobile */
+        font-size: 0.9rem; /* Shrunk button font size for mobile */
     }
     
     .services-interactive-layout {

@@ -1275,4 +1275,8 @@ footer {
     .benefits-grid {
         grid-template-columns: 1fr;
     }
+    
+    .lead-text {
+        font-size: 1.2rem;
+    }
 }

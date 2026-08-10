@@ -1206,4 +1206,46 @@ footer {
     .contact-form-wrapper {
         padding: 2rem;
     }
+    
+    /* Mobile Layout Optimizations */
+    .section-padding {
+        padding: 4rem 0;
+    }
+    
+    .hero {
+        padding: 6rem 0 3rem;
+    }
+    
+    .hero-bg-text {
+        font-size: 15vw;
+        letter-spacing: 2px;
+    }
+    
+    .hero-brain-img {
+        max-width: 250px;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .services-interactive-layout {
+        gap: 1.5rem;
+    }
+    
+    .about-overlap {
+        padding: 5rem 0;
+    }
+    
+    .about-bg-object {
+        opacity: 0.1;
+        width: 100%;
+        left: -10vw;
+    }
+    
+    .about-two-col {
+        text-align: center;
+    }
 }

@@ -1317,3 +1317,115 @@ footer {
         margin-bottom: 2rem;
     }
 }
+
+/* =========================================
+   INTERNAL PAGE SPECIFIC STYLES
+   ========================================= */
+
+body.internal-page {
+    background: var(--color-bg);
+}
+
+.internal-hero {
+    padding: 180px 20px 80px;
+    background: linear-gradient(135deg, var(--color-bg) 0%, #f0f4f8 100%);
+    text-align: center;
+}
+
+.internal-hero-content h1 {
+    font-size: 3rem;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+}
+
+.internal-hero-content p {
+    font-size: 1.2rem;
+    color: var(--color-text-light);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.doctor-profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.doctor-photo {
+    position: relative;
+}
+
+.photo-wrapper {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.photo-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 4/5;
+}
+
+.doctor-bio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+}
+
+.doctor-bio p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-text-light);
+    line-height: 1.8;
+}
+
+.doctor-bio strong {
+    color: var(--color-primary);
+}
+
+.credentials-list {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.credential-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 15px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.8);
+}
+
+.credential-item i {
+    font-size: 1.5rem;
+    color: var(--color-accent);
+}
+
+.credential-item span {
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+@media (max-width: 900px) {
+    .doctor-profile-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .internal-hero {
+        padding: 150px 20px 60px;
+    }
+    
+    .internal-hero-content h1 {
+        font-size: 2.2rem;
+    }
+}

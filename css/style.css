@@ -1442,13 +1442,12 @@ body.internal-page {
     overflow: hidden;
     display: flex;
     align-items: center;
-    padding: 120px 0 80px 0;
+    padding: 120px 0 280px 0; /* Huge padding at bottom for text */
 }
 
 .about-modern-container {
     position: relative;
-    z-index: 5;
-    height: 100%;
+    z-index: 2;
     width: 100%;
 }
 

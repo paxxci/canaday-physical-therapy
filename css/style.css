@@ -1459,7 +1459,7 @@ body.internal-page {
 }
 
 .modern-headline {
-    font-size: clamp(2rem, 4vw, 3.8rem);
+    font-size: min(3.8vw, 3.5rem);
     white-space: nowrap;
     line-height: 1.1;
     color: var(--color-white);

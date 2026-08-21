@@ -243,6 +243,7 @@ ul {
     background-color: var(--color-bg-white); /* Clean background */
     overflow: hidden; /* Hide overflowing background text */
     padding-top: 80px;
+    padding-bottom: 100px;
 }
 
 /* Huge text in the background */

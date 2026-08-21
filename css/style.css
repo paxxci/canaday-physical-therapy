@@ -603,7 +603,7 @@ ul {
     max-width: 900px;
     transform: translateY(-50%);
     z-index: 1;
-    opacity: 0.4; /* Increased opacity to make it brighter as requested */
+    opacity: 1;
 }
 
 .about-overlap-container {

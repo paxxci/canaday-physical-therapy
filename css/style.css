@@ -1482,6 +1482,10 @@ body.internal-page {
     margin-bottom: 1.5rem;
 }
 
+.span-two-cols {
+    grid-column: 1 / -1;
+}
+
 .modern-bio-columns strong {
     color: var(--color-white);
 }

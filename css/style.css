@@ -1453,17 +1453,17 @@ body.internal-page {
 }
 
 .about-modern-content {
-    width: 65%;
-    max-width: 850px;
+    width: 100%;
     position: relative;
     z-index: 10;
 }
 
 .modern-headline {
-    font-size: 3.2rem;
-    line-height: 1.2;
+    font-size: clamp(2rem, 4vw, 3.8rem);
+    white-space: nowrap;
+    line-height: 1.1;
     color: var(--color-white);
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .modern-bio-columns {
@@ -1471,7 +1471,8 @@ body.internal-page {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     margin-bottom: 2.5rem;
-    width: 100%;
+    width: 60%;
+    max-width: 800px;
 }
 
 .modern-bio-columns p {
@@ -1513,7 +1514,7 @@ body.internal-page {
     left: 0;
     width: 100%;
     text-align: center;
-    font-size: 9.5vw;
+    font-size: 11vw; /* Adjusted to fit full name */
     font-weight: 800;
     line-height: 1;
     color: var(--color-bg-light);
@@ -1527,9 +1528,9 @@ body.internal-page {
     position: absolute;
     bottom: 0;
     right: 2%;
-    height: 70vh;
-    width: 45%;
-    max-width: 650px;
+    height: 90vh; /* slightly reduced from 100% to not be WAY too large */
+    width: 40%;
+    max-width: 700px;
     object-fit: contain;
     object-position: bottom right;
     z-index: 2;

@@ -1526,13 +1526,13 @@ body.internal-page {
 
 .modern-hero-image {
     position: absolute;
-    bottom: 0;
+    top: 220px;
     right: 2%;
-    height: 90vh; /* slightly reduced from 100% to not be WAY too large */
-    width: 40%;
-    max-width: 700px;
+    height: auto;
+    width: 45%;
+    max-width: 750px;
     object-fit: contain;
-    object-position: bottom right;
+    object-position: top right;
     z-index: 2;
     pointer-events: none;
 }
@@ -1561,8 +1561,12 @@ body.internal-page {
         gap: 0;
     }
     .modern-hero-image {
+        top: auto;
+        bottom: 0;
         right: -10%;
-        height: 60vh;
+        height: 50vh;
+        width: 80%;
         max-height: none;
+        object-position: bottom right;
     }
 }

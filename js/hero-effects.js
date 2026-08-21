@@ -5,34 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroSection = document.querySelector('.hero');
     const brainImg = document.querySelector('.hero-brain-img');
 
-    if (heroSection && brainImg) {
-        heroSection.addEventListener('mousemove', (e) => {
-            // Get center of the hero section
-            const rect = heroSection.getBoundingClientRect();
-            const centerX = rect.left + rect.width / 2;
-            const centerY = rect.top + rect.height / 2;
-
-            // Calculate mouse distance from center (-1 to 1)
-            const mouseX = (e.clientX - centerX) / (rect.width / 2);
-            const mouseY = (e.clientY - centerY) / (rect.height / 2);
-
-            // Max rotation degrees
-            const maxRotateX = 15; // Up/down tilt
-            const maxRotateY = 15; // Left/right tilt
-
-            // Calculate rotation (inverted so it tilts toward mouse)
-            const rotateX = -(mouseY * maxRotateX);
-            const rotateY = mouseX * maxRotateY;
-
-            // Apply transform
-            brainImg.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-        });
-
-        // Reset on mouse leave
-        heroSection.addEventListener('mouseleave', () => {
-            brainImg.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg)`;
-        });
-    }
+    // (Tilt effect removed by request)
 
     // ----------------------------------------------------
     // 2. FLOATING NEURAL PATHWAYS (CANVAS PARTICLES)

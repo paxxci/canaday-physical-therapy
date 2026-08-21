@@ -1514,14 +1514,15 @@ body.internal-page {
     left: 0;
     width: 100%;
     text-align: center;
-    font-size: 11vw; /* Adjusted to fit full name */
+    font-size: 11vw;
     font-weight: 800;
     line-height: 1;
     color: var(--color-bg-light);
     opacity: 0.08;
     white-space: nowrap;
-    z-index: 1;
+    z-index: 3;
     user-select: none;
+    pointer-events: none;
 }
 
 .modern-hero-image {
@@ -1529,8 +1530,8 @@ body.internal-page {
     top: 100px;
     right: 2%;
     height: auto;
-    width: 45%;
-    max-width: 750px;
+    width: 38%;
+    max-width: 650px;
     object-fit: contain;
     object-position: top right;
     z-index: 2;

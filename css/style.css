@@ -1438,7 +1438,7 @@ body.internal-page {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-color: var(--color-bg);
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, #151a1d 100%);
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -1454,39 +1454,39 @@ body.internal-page {
 
 .about-modern-content {
     width: 55%;
-    max-width: 700px;
+    max-width: 750px;
 }
 
 .modern-headline {
-    font-size: 4rem;
+    font-size: 4.5rem;
     line-height: 1.1;
-    color: var(--color-text);
-    margin-bottom: 2rem;
+    color: var(--color-white);
+    margin-bottom: 2.5rem;
 }
 
 .modern-bio-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin-bottom: 2rem;
+    gap: 40px;
+    margin-bottom: 2.5rem;
 }
 
 .modern-bio-columns p {
-    font-size: 0.95rem;
-    line-height: 1.7;
-    color: var(--color-text-light);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #cbd5db;
     margin-bottom: 1.5rem;
 }
 
 .modern-bio-columns strong {
-    color: var(--color-primary);
+    color: var(--color-white);
 }
 
 .modern-credentials {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-bottom: 2rem;
+    gap: 15px;
+    margin-bottom: 3rem;
 }
 
 .modern-credentials .credential-item {
@@ -1494,12 +1494,14 @@ body.internal-page {
     border: none;
     padding: 0;
     gap: 15px;
-    color: var(--color-primary);
+    color: var(--color-bg-white);
+    font-size: 1.1rem;
     font-weight: 600;
 }
 
 .modern-credentials .credential-item i {
-    color: var(--color-accent);
+    color: var(--color-accent-green);
+    font-size: 1.3rem;
 }
 
 .modern-background-text {
@@ -1508,11 +1510,11 @@ body.internal-page {
     left: 0;
     width: 100%;
     text-align: center;
-    font-size: 15vw;
+    font-size: 16vw;
     font-weight: 800;
     line-height: 1;
-    color: var(--color-primary);
-    opacity: 0.04;
+    color: var(--color-bg-light);
+    opacity: 0.08;
     white-space: nowrap;
     z-index: 1;
     user-select: none;

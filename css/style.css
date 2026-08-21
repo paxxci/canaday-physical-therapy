@@ -742,9 +742,9 @@ ul {
 
 /* Floating Label Form */
 .contact-form-wrapper {
-    background-color: var(--color-white);
+    background: linear-gradient(135deg, var(--color-primary-dark), #3A5A6E);
     padding: 3rem;
-    border-radius: 8px;
+    border-radius: 12px;
     box-shadow: var(--shadow-hover);
     position: relative;
     z-index: 10;
@@ -758,7 +758,7 @@ ul {
     transform: translate(-50%, -50%);
     width: 140%;
     height: 140%;
-    background: radial-gradient(circle, rgba(118, 137, 115, 0.15) 0%, rgba(118, 137, 115, 0) 70%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 70%);
     z-index: -1;
     pointer-events: none;
     animation: pulse-glow 8s ease-in-out infinite alternate;
@@ -773,6 +773,7 @@ ul {
     font-size: 1.75rem;
     margin-bottom: 2rem;
     text-align: center;
+    color: var(--color-white);
 }
 
 .form-group {
@@ -786,9 +787,9 @@ ul {
     padding: 12px 0;
     font-size: 1rem;
     font-family: var(--font-body);
-    color: var(--color-primary-dark);
+    color: var(--color-white);
     border: none;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
     outline: none;
     background: transparent;
     transition: var(--transition-fast);
@@ -796,14 +797,14 @@ ul {
 
 .form-group input:focus,
 .form-group select:focus {
-    border-bottom-color: var(--color-accent-green);
+    border-bottom-color: var(--color-white);
 }
 
 .form-group label {
     position: absolute;
     top: 12px;
     left: 0;
-    color: #999;
+    color: rgba(255, 255, 255, 0.7);
     font-size: 1rem;
     pointer-events: none;
     transition: var(--transition-fast);
@@ -815,13 +816,26 @@ ul {
 .form-group select:valid ~ label {
     top: -12px;
     font-size: 0.75rem;
-    color: var(--color-accent-green);
+    color: var(--color-white);
     font-weight: 600;
 }
 
 .form-group select {
     cursor: pointer;
     appearance: none;
+}
+
+.contact-form .btn {
+    background-color: var(--color-white);
+    color: var(--color-primary-dark);
+    border: none;
+    margin-top: 1rem;
+}
+
+.contact-form .btn:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .contact-form .btn i {

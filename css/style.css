@@ -1526,11 +1526,11 @@ body.internal-page {
 
 .modern-hero-image {
     position: absolute;
-    top: 220px;
-    right: 2%;
-    height: auto;
-    width: 45%;
-    max-width: 750px;
+    top: 120px; /* Aligned near the title */
+    right: 5%;
+    height: 65vh; /* Reduced size */
+    width: auto;
+    max-width: 500px; /* Prevent it from getting too large */
     object-fit: contain;
     object-position: top right;
     z-index: 2;

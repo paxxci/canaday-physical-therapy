@@ -1453,12 +1453,12 @@ body.internal-page {
 }
 
 .about-modern-content {
-    width: 55%;
-    max-width: 750px;
+    width: 60%;
+    max-width: 900px;
 }
 
 .modern-headline {
-    font-size: 4.5rem;
+    font-size: 3.8rem;
     line-height: 1.1;
     color: var(--color-white);
     margin-bottom: 2.5rem;

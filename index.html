@@ -38,11 +38,14 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <canvas id="neural-canvas"></canvas>
         <!-- Huge background text -->
         <div class="hero-bg-text">CANADAY <span class="hero-bg-text-blue">PT</span></div>
         
         <div class="container hero-content">
-            <img src="photos/hero-brain-glassmorphism.png" alt="Sleek Glassmorphism Brain" class="hero-brain-img reveal">
+            <div class="hero-brain-wrapper">
+                <img src="photos/hero-brain-glassmorphism.png" alt="Sleek Glassmorphism Brain" class="hero-brain-img reveal">
+            </div>
             <h1 class="reveal fade-bottom delay-1">Specialized Physical Therapy<br><span>That Comes to You</span></h1>
             <div class="hero-buttons reveal fade-bottom delay-2">
                 <a href="#contact" class="btn btn-primary btn-large">Schedule Evaluation</a>
@@ -393,5 +396,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/hero-effects.js"></script>
 </body>
 </html>

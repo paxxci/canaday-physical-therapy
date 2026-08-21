@@ -277,13 +277,33 @@ ul {
     align-items: center;
 }
 
+#neural-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-brain-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    animation: float 6s ease-in-out infinite;
+    perspective: 1000px;
+}
+
 .hero-brain-img {
     max-width: 500px;
     width: 100%;
     height: auto;
     margin-bottom: 0;
     filter: drop-shadow(0 20px 30px rgba(0,0,0,0.15));
-    animation: float 6s ease-in-out infinite;
+    transition: transform 0.1s cubic-bezier(0.2, 0.8, 0.2, 1);
+    will-change: transform;
+    transform-style: preserve-3d;
 }
 
 @keyframes float {

@@ -1523,6 +1523,8 @@ body.internal-page {
     z-index: 3;
     user-select: none;
     pointer-events: none;
+    transform: scaleY(1.8);
+    transform-origin: bottom center;
 }
 
 .modern-hero-image {
@@ -1536,6 +1538,8 @@ body.internal-page {
     object-position: top right;
     z-index: 2;
     pointer-events: none;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);
 }
 
 @media (max-width: 1200px) {

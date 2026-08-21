@@ -71,6 +71,12 @@ ul {
     padding: 0 2rem;
 }
 
+.container-wide {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
 .section-padding {
     padding: 4rem 0; /* Reduced from 100px to tighten up the vertical spacing globally */
 }

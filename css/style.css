@@ -1429,3 +1429,130 @@ body.internal-page {
         font-size: 2.2rem;
     }
 }
+
+/* =========================================
+   MODERN ABOUT HERO (EDITORIAL)
+   ========================================= */
+
+.about-modern-hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-bg);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 120px 0 80px 0;
+}
+
+.about-modern-container {
+    position: relative;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+}
+
+.about-modern-content {
+    width: 55%;
+    max-width: 700px;
+}
+
+.modern-headline {
+    font-size: 4rem;
+    line-height: 1.1;
+    color: var(--color-text);
+    margin-bottom: 2rem;
+}
+
+.modern-bio-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 2rem;
+}
+
+.modern-bio-columns p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--color-text-light);
+    margin-bottom: 1.5rem;
+}
+
+.modern-bio-columns strong {
+    color: var(--color-primary);
+}
+
+.modern-credentials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.modern-credentials .credential-item {
+    background: transparent;
+    border: none;
+    padding: 0;
+    gap: 15px;
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.modern-credentials .credential-item i {
+    color: var(--color-accent);
+}
+
+.modern-background-text {
+    position: absolute;
+    bottom: -5vh;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 15vw;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--color-primary);
+    opacity: 0.04;
+    white-space: nowrap;
+    z-index: 1;
+    user-select: none;
+}
+
+.modern-hero-image {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    height: 90vh;
+    max-height: 900px;
+    width: auto;
+    object-fit: contain;
+    object-position: bottom;
+    z-index: 2;
+    pointer-events: none;
+}
+
+@media (max-width: 1200px) {
+    .modern-headline {
+        font-size: 3rem;
+    }
+    .modern-hero-image {
+        right: -5%;
+        height: 80vh;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-modern-content {
+        width: 100%;
+        padding-bottom: 50vh; /* space for the image at bottom */
+    }
+    .modern-bio-columns {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .modern-hero-image {
+        right: -10%;
+        height: 60vh;
+        max-height: none;
+    }
+}

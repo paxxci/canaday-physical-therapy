@@ -465,8 +465,8 @@ ul {
     border-top: 1px solid rgba(255, 255, 255, 0.4);
     border-left: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 16px;
-    padding: 1.5rem;
-    width: 260px;
+    padding: 2rem; /* Increased padding slightly for wider card */
+    width: 330px; /* Made significantly wider */
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     position: relative;
     z-index: 10;

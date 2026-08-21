@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ----------------------------------------------------
-    // 2. FLOATING ORGANIC NEURONS (CANVAS)
+    // 2. FLOATING NEURAL PATHWAYS (CANVAS PARTICLES)
     // ----------------------------------------------------
     const canvas = document.getElementById('neural-canvas');
     if (!canvas) return;
@@ -44,13 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let width, height;
     let particles = [];
 
-    // Load the neuron image
-    const neuronImg = new Image();
-    neuronImg.src = 'photos/neurons-organic.png'; // Organic neuron image
-
     // Configuration
-    const particleCount = Math.min(Math.floor(window.innerWidth / 150), 12); // Fewer particles since they are larger images
-    const particleSpeed = 0.2;
+    const particleCount = Math.min(Math.floor(window.innerWidth / 15), 100); // Scale with screen size, max 100
+    const connectionDistance = 150;
+    const particleSpeed = 0.5;
 
     // Resize canvas
     function resize() {
@@ -68,34 +65,23 @@ document.addEventListener('DOMContentLoaded', () => {
             this.y = Math.random() * height;
             this.vx = (Math.random() - 0.5) * particleSpeed;
             this.vy = (Math.random() - 0.5) * particleSpeed;
-            this.size = Math.random() * 200 + 100; // Large sizes for neurons
-            this.rotation = Math.random() * Math.PI * 2; // Random initial rotation
-            this.rotationSpeed = (Math.random() - 0.5) * 0.005; // Slow rotation
-            this.opacity = Math.random() * 0.15 + 0.05; // Very subtle, 5-20% opacity
+            this.radius = Math.random() * 2 + 1;
         }
 
         update() {
             this.x += this.vx;
             this.y += this.vy;
-            this.rotation += this.rotationSpeed;
 
-            // Wrap around edges for seamless floating
-            if (this.x < -this.size) this.x = width + this.size;
-            if (this.x > width + this.size) this.x = -this.size;
-            if (this.y < -this.size) this.y = height + this.size;
-            if (this.y > height + this.size) this.y = -this.size;
+            // Bounce off edges
+            if (this.x < 0 || this.x > width) this.vx *= -1;
+            if (this.y < 0 || this.y > height) this.vy *= -1;
         }
 
         draw() {
-            if (!neuronImg.complete) return; // Wait for image to load
-            
-            ctx.save();
-            ctx.translate(this.x, this.y);
-            ctx.rotate(this.rotation);
-            ctx.globalAlpha = this.opacity;
-            // Draw image centered at x,y
-            ctx.drawImage(neuronImg, -this.size / 2, -this.size / 2, this.size, this.size);
-            ctx.restore();
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(141, 166, 184, 0.4)'; // Slate blue
+            ctx.fill();
         }
     }
 
@@ -114,8 +100,28 @@ document.addEventListener('DOMContentLoaded', () => {
             p.draw();
         });
 
+        // Draw connections
+        for (let i = 0; i < particles.length; i++) {
+            for (let j = i + 1; j < particles.length; j++) {
+                const dx = particles[i].x - particles[j].x;
+                const dy = particles[i].y - particles[j].y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+
+                if (distance < connectionDistance) {
+                    // Opacity based on distance
+                    const opacity = 1 - (distance / connectionDistance);
+                    ctx.beginPath();
+                    ctx.moveTo(particles[i].x, particles[i].y);
+                    ctx.lineTo(particles[j].x, particles[j].y);
+                    ctx.strokeStyle = `rgba(141, 166, 184, ${opacity * 0.2})`; // Faint connecting lines
+                    ctx.lineWidth = 1;
+                    ctx.stroke();
+                }
+            }
+        }
+
         requestAnimationFrame(animate);
     }
 
-    neuronImg.onload = animate; // Start animation when image loads
+    animate();
 });

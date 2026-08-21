@@ -260,7 +260,7 @@ ul {
     transform: translate(-50%, -50%);
     font-family: var(--font-heading);
     font-weight: 800;
-    font-size: 12vw;
+    font-size: 16vw; /* Increased size */
     line-height: 1;
     color: var(--color-bg-light);
     white-space: nowrap;
@@ -1269,7 +1269,7 @@ footer {
     }
     
     .hero-bg-text {
-        font-size: 11vw; /* Shrunk from 15vw to fit on screen */
+        font-size: 14vw; /* Increased size */
         letter-spacing: 2px;
         top: 35%; /* Move up behind the brain */
     }

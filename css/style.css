@@ -1364,6 +1364,21 @@ body.internal-page {
     background: var(--color-bg);
 }
 
+/* Make navbar text white on internal pages before scrolling */
+body.internal-page .navbar:not(.scrolled) .nav-links a:not(.btn),
+body.internal-page .navbar:not(.scrolled) .logo-text,
+body.internal-page .navbar:not(.scrolled) .hamburger i {
+    color: var(--color-white);
+}
+
+body.internal-page .navbar:not(.scrolled) .nav-logo-img {
+    filter: brightness(0) invert(1); /* Turns the dark logo pure white */
+}
+
+body.internal-page .navbar:not(.scrolled) .logo-text small {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 .internal-hero {
     padding: 180px 20px 80px;
     background: linear-gradient(135deg, var(--color-bg) 0%, #f0f4f8 100%);

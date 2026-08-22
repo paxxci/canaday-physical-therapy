@@ -430,7 +430,7 @@ ul {
    Services Section
    ========================================================================== */
 .services {
-    background-color: var(--color-bg-white);
+    background-color: var(--color-bg-light);
     padding-top: 1rem; /* Pull section much closer to the About section above it */
     padding-bottom: 6rem; /* Add extra space to clear the staggered cards at the bottom */
 }

@@ -686,11 +686,6 @@ ul {
    ========================================================================== */
 .contact {
     background-color: var(--color-white); /* Pure white background */
-    background-image: url('../photos/faded-mountains-bg.png');
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-blend-mode: luminosity; /* Renders the mountain overlay in subtle greyscale */
     position: relative;
     overflow: hidden;
 }

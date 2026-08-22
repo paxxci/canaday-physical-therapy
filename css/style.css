@@ -430,7 +430,7 @@ ul {
    Services Section
    ========================================================================== */
 .services {
-    background-color: var(--color-bg-light);
+    background-color: var(--color-bg-white);
     padding-top: 1rem; /* Pull section much closer to the About section above it */
     padding-bottom: 6rem; /* Add extra space to clear the staggered cards at the bottom */
 }
@@ -688,6 +688,9 @@ ul {
     background-color: var(--color-white); /* Pure white background */
     position: relative;
     overflow: hidden;
+    /* Soft premium divider */
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0 -15px 40px rgba(0, 0, 0, 0.02);
 }
 .contact-container {
     display: grid;

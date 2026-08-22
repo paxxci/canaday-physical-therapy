@@ -1234,11 +1234,18 @@ footer {
     }
     
     .hero h1 {
-        font-size: 1.8rem;
+        font-size: 1.45rem; /* Shrunk from 1.8rem for better mobile fit */
+        margin-bottom: 2rem;
     }
     
     .hero-buttons {
         flex-direction: column;
+        gap: 12px; /* Add specific gap for stacked buttons */
+    }
+    
+    .hero-buttons .btn-large {
+        padding: 12px 24px; /* Shrunk from 16px 36px */
+        font-size: 0.95rem; /* Shrunk from 1.05rem */
     }
     
     .contact-form-wrapper {

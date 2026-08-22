@@ -1371,10 +1371,6 @@ body.internal-page .navbar:not(.scrolled) .hamburger i {
     color: var(--color-white);
 }
 
-body.internal-page .navbar:not(.scrolled) .nav-logo-img {
-    filter: brightness(0) invert(1); /* Turns the dark logo pure white */
-}
-
 body.internal-page .navbar:not(.scrolled) .logo-text small {
     color: rgba(255, 255, 255, 0.8);
 }

@@ -1234,13 +1234,13 @@ footer {
     }
     
     .hero h1 {
-        font-size: 1.45rem; /* Shrunk from 1.8rem for better mobile fit */
-        margin-bottom: 2rem;
+        font-size: 1.45rem; 
+        margin-bottom: 0.5rem !important; /* Pull buttons much closer to title */
     }
     
     .hero-buttons {
         flex-direction: column;
-        gap: 8px !important; /* Force tight gap */
+        gap: 4px !important; /* Extremely tight gap between buttons */
         align-items: center; 
     }
     

@@ -1373,7 +1373,8 @@ footer {
     }
     
     .about-main-headline {
-        font-size: 1.6rem;
+        font-size: 1.3rem !important; /* Shrunk from 1.6rem */
+        text-align: center !important; /* Center the headline */
         margin-bottom: 2rem;
     }
 }

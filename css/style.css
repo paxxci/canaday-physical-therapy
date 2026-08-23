@@ -1333,8 +1333,7 @@ footer {
     }
     
     .service-card-blue .service-icon {
-        margin-bottom: 0.5rem !important; /* Tighter gap under icon */
-        margin-right: 0 !important; /* Remove right margin if any */
+        display: none !important; /* Hide icons on mobile to make cards smaller */
     }
     
     .service-card-blue h3 {

@@ -1362,7 +1362,7 @@ footer {
     }
     
     .reviews-section {
-        padding: 1rem 0 !important; /* Shrunk from 3rem for mobile */
+        display: none !important; /* Hide completely on mobile as requested */
     }
     
     .about-overlap-content {

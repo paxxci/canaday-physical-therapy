@@ -1307,7 +1307,7 @@ footer {
     .services-interactive-layout {
         display: grid !important;
         grid-template-columns: 1fr 1fr !important;
-        row-gap: 5rem !important; /* Huge hole in the middle for the brain */
+        row-gap: 8rem !important; /* Huge hole in the middle for the brain */
         column-gap: 0.5rem !important; /* Tight column gap */
         align-items: center;
         padding: 0 0.5rem;
@@ -1329,6 +1329,7 @@ footer {
         z-index: 2 !important; /* Cards float above the brain */
         min-width: 0 !important;
         width: 100% !important;
+        height: 70px !important; /* Fixed height so all cards match perfectly */
         box-sizing: border-box !important;
     }
     

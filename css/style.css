@@ -1313,7 +1313,7 @@ footer {
     }
     
     .about-bg-object {
-        opacity: 0.1;
+        opacity: 0.22; /* Increased from 0.1 to be more visible */
         width: 100%;
         left: -10vw;
     }

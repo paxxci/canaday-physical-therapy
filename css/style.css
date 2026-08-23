@@ -1269,6 +1269,16 @@ footer {
         padding: 3rem 0;
     }
     
+    .intro-statement.section-padding {
+        padding: 2rem 0 !important; /* Shrink overall padding for mobile */
+    }
+    
+    .intro-statement .lead-text {
+        font-size: 1.25rem !important; /* Shrink text significantly for mobile */
+        line-height: 1.5; /* Tighten line height slightly */
+        padding: 0 1rem; /* Ensure it doesn't touch edges */
+    }
+    
     .hero {
         padding: 5rem 0 2rem;
         min-height: auto; /* Let it shrink if needed to keep buttons visible */

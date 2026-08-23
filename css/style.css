@@ -1367,6 +1367,16 @@ footer {
         margin: 0 !important;
     }
     
+    .services-accordion-wrapper {
+        margin-top: 2rem !important; /* Shrunk from 5rem to bring button closer to cards */
+    }
+
+    .services-accordion-wrapper .btn-large {
+        white-space: nowrap !important; /* Force button text to stay on one line */
+        width: auto !important; /* Let it widen if necessary to fit text */
+        min-width: 80%;
+    }
+    
     .about-overlap {
         padding: 2rem 0 !important; /* Shrunk from 5rem to remove massive top/bottom gaps */
     }

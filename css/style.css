@@ -1802,6 +1802,7 @@ body.internal-page .navbar:not(.scrolled) .logo-text small {
         grid-template-columns: 1fr;
         width: 100%;
         gap: 0;
+        margin-bottom: 0 !important; /* Remove gap below bio */
     }
     .modern-background-text {
         display: none !important; /* Hide background text on mobile to save space */
@@ -1813,7 +1814,7 @@ body.internal-page .navbar:not(.scrolled) .logo-text small {
         bottom: auto !important;
         right: auto !important;
         left: auto !important;
-        margin: 2rem auto !important;
+        margin: 1rem auto 1.5rem !important; /* Tighter margins around image */
         width: 100% !important;
         max-width: 250px !important;
         height: auto !important;
@@ -1821,11 +1822,22 @@ body.internal-page .navbar:not(.scrolled) .logo-text small {
     }
     .modern-credentials {
         order: 4;
-        margin-top: 1rem;
+        margin-top: 0 !important;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .modern-credentials .credential-item {
+        font-size: 0.95rem !important; /* Shrink credential text */
+        padding: 0 !important;
+        gap: 10px !important;
+    }
+    .modern-credentials .credential-item i {
+        font-size: 1.1rem !important; /* Shrink credential icon */
     }
     .about-modern-content .btn {
         order: 5;
-        margin-top: 2.5rem !important;
+        margin-top: 1.5rem !important; /* Pull button up closer to credentials */
         align-self: center;
         width: 80% !important; /* Match other mobile buttons */
         max-width: 300px !important;

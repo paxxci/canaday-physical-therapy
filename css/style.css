@@ -1305,35 +1305,47 @@ footer {
     }
     
     .services-interactive-layout {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr; /* Revert to desktop 3-column layout */
+        gap: 0.5rem; /* Very tight gap */
         align-items: center;
-        gap: 2rem;
+        padding: 0 0.5rem; /* Tiny bit of padding so cards don't hit screen edges */
     }
     
     .services-col {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 1rem;
         width: 100%;
     }
     
     .services-col .service-card-blue {
         transform: none !important; /* Remove desktop staggered transforms */
-        padding: 1rem !important; /* Make cards smaller */
-        height: auto;
+        padding: 0.5rem !important; /* Tiny padding */
+        text-align: center; /* Center text in tiny cards */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .service-card-blue .service-icon {
+        margin-bottom: 0.5rem !important; /* Tighter gap under icon */
+        margin-right: 0 !important; /* Remove right margin if any */
     }
     
     .service-card-blue h3 {
-        font-size: 0.9rem !important; /* Shrink card titles */
+        font-size: 0.7rem !important; /* Tiny font size */
+        margin-bottom: 0 !important;
+        line-height: 1.2;
     }
     
     .service-card-blue p {
-        font-size: 0.75rem !important; /* Shrink card text */
+        display: none !important; /* Completely hide description on mobile */
     }
     
     .services-center-img {
-        max-width: 150px !important; /* Make brain smaller */
+        max-width: 120px !important; /* Much smaller brain to fit between cards */
         margin: 0 auto;
     }
     

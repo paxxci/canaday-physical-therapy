@@ -1240,15 +1240,15 @@ footer {
     
     .hero-buttons {
         flex-direction: column;
-        gap: 8px; /* Tighter gap for stacked buttons */
-        align-items: center; /* Ensure they stay centered */
+        gap: 8px !important; /* Force tight gap */
+        align-items: center; 
     }
     
     .hero-buttons .btn-large {
-        padding: 10px 24px;
-        font-size: 0.85rem;
+        padding: 10px 24px !important;
+        font-size: 0.85rem !important;
         width: 80%;
-        max-width: 300px; /* Keep them reasonably wide but not full width */
+        max-width: 300px;
     }
     
     .contact-form-wrapper {

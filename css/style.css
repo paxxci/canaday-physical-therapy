@@ -1308,7 +1308,7 @@ footer {
     }
     
     .about-overlap {
-        padding: 5rem 0;
+        padding: 2rem 0 !important; /* Shrunk from 5rem to remove massive top/bottom gaps */
     }
     
     .about-bg-object {
@@ -1375,7 +1375,11 @@ footer {
     .about-main-headline {
         font-size: 1.3rem !important; /* Shrunk from 1.6rem */
         text-align: center !important; /* Center the headline */
-        margin-bottom: 2rem;
+        margin-bottom: 1rem !important; /* Shrink gap below headline */
+    }
+    
+    .about-separator {
+        margin-bottom: 1.5rem !important; /* Shrink gap below separator */
     }
 }
 

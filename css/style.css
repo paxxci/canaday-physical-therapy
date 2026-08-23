@@ -1785,6 +1785,14 @@ body.internal-page .navbar:not(.scrolled) .logo-text small {
     }
     .modern-headline {
         white-space: normal; /* Allow wrapping on small screens */
+        font-size: 2.2rem !important; /* Shrink massive heading */
+        margin-bottom: 1.5rem !important;
+        line-height: 1.1;
+    }
+    .modern-bio-columns p {
+        font-size: 0.95rem !important; /* Shrink bio text */
+        line-height: 1.6 !important;
+        margin-bottom: 1rem !important;
     }
     .modern-bio-columns {
         grid-template-columns: 1fr;

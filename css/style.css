@@ -1820,11 +1820,16 @@ body.internal-page .navbar:not(.scrolled) .logo-text small {
         height: auto !important;
         object-position: center !important;
     }
+    .about-modern-hero {
+        padding: 100px 0 2rem 0 !important; /* Slash the massive 280px bottom padding */
+        min-height: auto;
+    }
     .modern-credentials {
         order: 4;
         margin-top: 0 !important;
         display: flex;
         flex-direction: column;
+        align-items: center; /* Center the credentials list */
         gap: 10px;
     }
     .modern-credentials .credential-item {
@@ -1839,8 +1844,9 @@ body.internal-page .navbar:not(.scrolled) .logo-text small {
         order: 5;
         margin-top: 1.5rem !important; /* Pull button up closer to credentials */
         align-self: center;
-        width: 80% !important; /* Match other mobile buttons */
-        max-width: 300px !important;
+        white-space: nowrap !important; /* Force single line */
+        width: auto !important; /* Allow width to expand for text */
+        min-width: 80%; /* But keep it at least 80% */
         font-size: 0.85rem !important; /* Match other mobile buttons */
         padding: 10px 24px !important;
     }

@@ -1319,6 +1319,8 @@ footer {
     
     .about-two-col {
         text-align: center;
+        grid-template-columns: 1fr; /* Stack columns on mobile */
+        gap: 2rem; /* Reduce gap between stacked items */
     }
     
     .section-header h2 {

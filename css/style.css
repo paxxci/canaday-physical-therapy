@@ -1308,7 +1308,7 @@ footer {
     .services-interactive-layout {
         display: grid !important;
         grid-template-columns: 1fr 1fr !important;
-        row-gap: 8rem !important; /* Huge hole in the middle for the brain */
+        row-gap: 12rem !important; /* Huge hole in the middle for the bigger brain */
         column-gap: 0.5rem !important; /* Tight column gap */
         align-items: center;
         padding: 0 0.5rem;
@@ -1357,13 +1357,13 @@ footer {
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
-        width: 100px !important; /* Fixed width for center wrapper */
+        width: 180px !important; /* Fixed width for center wrapper to match hero brain */
         height: auto !important;
     }
     
     .services-center-img {
-        max-width: 100px !important; /* Exact brain size */
-        width: 100px !important;
+        max-width: 180px !important; /* Exact brain size to match hero brain */
+        width: 180px !important;
         margin: 0 !important;
     }
     

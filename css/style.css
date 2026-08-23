@@ -1421,6 +1421,34 @@ footer {
         margin-bottom: 0 !important;
     }
     
+    .contact-info h2 {
+        font-size: 1.5rem !important; /* Shrunk massive heading */
+    }
+    
+    .contact-info > p {
+        font-size: 0.95rem !important;
+        margin-bottom: 2rem !important; /* Tighter gap below intro paragraph */
+    }
+    
+    .info-item {
+        gap: 1rem !important; /* Tighter gap between icon and text */
+        margin-bottom: 1.5rem !important; /* Tighter gap between contact items */
+    }
+    
+    .info-item i {
+        width: 45px !important; /* Shrunk huge 60px icons */
+        height: 45px !important;
+        font-size: 1.2rem !important;
+    }
+    
+    .info-item h4 {
+        font-size: 1.1rem !important;
+    }
+    
+    .info-item p {
+        font-size: 0.85rem !important;
+    }
+    
     .about-overlap {
         padding: 2rem 0 !important; /* Shrunk from 5rem to remove massive top/bottom gaps */
     }

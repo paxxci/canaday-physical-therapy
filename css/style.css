@@ -1392,6 +1392,35 @@ footer {
         line-height: 1.5 !important;
     }
     
+    .why-mobile.section-padding {
+        padding: 2rem 0 !important;
+    }
+    
+    .why-mobile .section-header {
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .benefits-grid {
+        gap: 1.5rem !important; /* Shrunk gap */
+    }
+    
+    .benefit-item i {
+        width: 45px !important;
+        height: 45px !important;
+        font-size: 1.2rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .benefit-item h4 {
+        font-size: 1rem !important;
+        margin-bottom: 0.25rem !important;
+    }
+    
+    .benefit-item p {
+        font-size: 0.85rem !important;
+        margin-bottom: 0 !important;
+    }
+    
     .about-overlap {
         padding: 2rem 0 !important; /* Shrunk from 5rem to remove massive top/bottom gaps */
     }

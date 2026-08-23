@@ -1781,9 +1781,12 @@ body.internal-page .navbar:not(.scrolled) .logo-text small {
 @media (max-width: 900px) {
     .about-modern-content {
         width: 100%;
-        padding-bottom: 50vh;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
     }
     .modern-headline {
+        order: 1;
         white-space: normal; /* Allow wrapping on small screens */
         font-size: 2.2rem !important; /* Shrink massive heading */
         margin-bottom: 1.5rem !important;
@@ -1795,17 +1798,38 @@ body.internal-page .navbar:not(.scrolled) .logo-text small {
         margin-bottom: 1rem !important;
     }
     .modern-bio-columns {
+        order: 2;
         grid-template-columns: 1fr;
         width: 100%;
         gap: 0;
     }
+    .modern-background-text {
+        display: none !important; /* Hide background text on mobile to save space */
+    }
     .modern-hero-image {
-        top: auto;
-        bottom: 0;
-        right: -10%;
-        height: 50vh;
-        width: 80%;
-        max-height: none;
-        object-position: bottom right;
+        order: 3;
+        position: relative !important;
+        top: auto !important;
+        bottom: auto !important;
+        right: auto !important;
+        left: auto !important;
+        margin: 2rem auto !important;
+        width: 100% !important;
+        max-width: 250px !important;
+        height: auto !important;
+        object-position: center !important;
+    }
+    .modern-credentials {
+        order: 4;
+        margin-top: 1rem;
+    }
+    .about-modern-content .btn {
+        order: 5;
+        margin-top: 2.5rem !important;
+        align-self: center;
+        width: 80% !important; /* Match other mobile buttons */
+        max-width: 300px !important;
+        font-size: 0.85rem !important; /* Match other mobile buttons */
+        padding: 10px 24px !important;
     }
 }

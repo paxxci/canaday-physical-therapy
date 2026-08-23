@@ -1244,7 +1244,8 @@ footer {
         align-items: center; 
     }
     
-    .hero-buttons .btn-large {
+    .hero-buttons .btn-large,
+    .about-overlap .btn-large {
         padding: 10px 24px !important;
         font-size: 0.85rem !important;
         width: 80%;

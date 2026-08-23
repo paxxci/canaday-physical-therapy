@@ -1270,12 +1270,12 @@ footer {
     }
     
     .intro-statement.section-padding {
-        padding: 2rem 0 !important; /* Shrink overall padding for mobile */
+        padding: 1rem 0 !important; /* Shrink overall padding for mobile */
     }
     
     .intro-statement .lead-text {
-        font-size: 1.25rem !important; /* Shrink text significantly for mobile */
-        line-height: 1.5; /* Tighten line height slightly */
+        font-size: 1.1rem !important; /* Shrink text significantly for mobile */
+        line-height: 1.4; /* Tighten line height slightly */
         padding: 0 1rem; /* Ensure it doesn't touch edges */
     }
     
@@ -1362,7 +1362,7 @@ footer {
     }
     
     .reviews-section {
-        padding: 3rem 0;
+        padding: 1rem 0 !important; /* Shrunk from 3rem for mobile */
     }
     
     .about-overlap-content {

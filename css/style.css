@@ -3,11 +3,11 @@
    ========================================================================== */
 :root {
     /* Brand Colors extracted from mood board */
-    --color-primary-dark: #22282D; /* Dark Slate / Charcoal */
-    --color-secondary-dark: #586469; /* Slate Grey */
-    --color-accent-warm: #8C867B; /* Warm Taupe */
-    --color-bg-light: #E3DED8; /* Light Beige */
-    --color-bg-white: #F9F8F6; /* Off-white for main background */
+    --color-primary-dark: #1C2329; /* Cooler Deep Charcoal */
+    --color-secondary-dark: #4A5560; /* Cooler Slate Grey */
+    --color-accent-warm: #94A3B8; /* Cool Silver Accent (Replacing Taupe) */
+    --color-bg-light: #F1F5F9; /* Ice Silver Background (Replacing Beige) */
+    --color-bg-white: #FFFFFF; /* Pure White Background (Replacing Warm White) */
     --color-brand-blue: #3A5A6E; /* Slate Blue (Replacing Green) */
     --color-text-main: #22282D;
     --color-text-light: #586469;

@@ -1737,24 +1737,24 @@ body.internal-page .navbar:not(.scrolled) .logo-text small {
 .modern-background-text {
     position: absolute;
     bottom: 0;
-    left: 50%; /* Center on screen */
+    left: 50%; /* Center on viewport */
     right: auto;
-    width: 55%; 
-    max-width: 900px; 
+    width: 100vw; /* Stretch perfectly across entire screen */
+    max-width: none; 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: clamp(2rem, 5.5vw, 7rem); 
+    font-size: 11vw; /* Perfect size to stretch edge-to-edge */
     font-weight: 800;
     line-height: 1;
     color: var(--color-bg-light);
-    opacity: 0.06; 
+    opacity: 0.05; /* Soften opacity since it's massive */
     white-space: nowrap;
     z-index: 1; 
     user-select: none;
     pointer-events: none;
-    transform: translateX(-50%) scaleY(2.8); /* Maintain vertical stretch but center horizontally */
+    transform: translateX(-50%) scaleY(2.5); /* Centered and stretched tall */
     transform-origin: bottom center;
 }
 

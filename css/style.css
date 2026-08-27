@@ -606,7 +606,7 @@ ul {
 .about-bg-object {
     position: absolute;
     top: 50%;
-    left: 2.5vw;
+    left: 1vw;
     width: 60vw;
     max-width: 900px;
     transform: translateY(-50%);

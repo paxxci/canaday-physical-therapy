@@ -1745,7 +1745,7 @@ body.internal-page .navbar:not(.scrolled) .logo-text small {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 7.2vw; /* Perfectly scaled so 14 chars fit exactly in the 52% box */
+    font-size: 5.5vw; /* Squished horizontally (narrower text) */
     font-weight: 800;
     line-height: 1;
     color: var(--color-bg-light);
@@ -1754,7 +1754,7 @@ body.internal-page .navbar:not(.scrolled) .logo-text small {
     z-index: 1; 
     user-select: none;
     pointer-events: none;
-    transform: scaleY(1.8); /* Squish vertically to avoid overlapping image */
+    transform: scaleY(2.3); /* Proportionally increased to maintain exact vertical height */
     transform-origin: bottom center;
 }
 

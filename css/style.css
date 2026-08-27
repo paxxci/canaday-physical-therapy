@@ -720,14 +720,14 @@ ul {
 .info-item i {
     font-size: 1.5rem;
     color: #ffffff;
-    background-color: var(--color-brand-blue);
+    background-color: var(--color-accent-warm);
     width: 60px;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(118, 137, 115, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 

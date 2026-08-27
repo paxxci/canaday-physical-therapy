@@ -1669,7 +1669,7 @@ body.internal-page .navbar:not(.scrolled) .logo-text small {
     overflow: hidden;
     display: flex;
     align-items: center;
-    padding: 120px 0 280px 0; /* Huge padding at bottom for text */
+    padding: 120px 0; /* Removed huge bottom padding to pull footer up */
 }
 
 .about-modern-container {

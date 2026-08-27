@@ -1468,7 +1468,7 @@ footer {
     }
     
     .about-bg-object {
-        opacity: 0.22; /* Increased from 0.1 to be more visible */
+        opacity: 0.5; /* Increased for vibrancy on mobile */
         width: 100%;
         left: -10vw;
     }

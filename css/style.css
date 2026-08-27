@@ -1556,6 +1556,10 @@ body.internal-page {
     background: var(--color-bg);
 }
 
+body.internal-page footer {
+    background-color: var(--color-bg);
+}
+
 /* Make navbar text white on internal pages before scrolling */
 body.internal-page .navbar:not(.scrolled) .nav-links a:not(.btn),
 body.internal-page .navbar:not(.scrolled) .logo-text,

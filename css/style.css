@@ -1683,7 +1683,7 @@ body.internal-page .navbar:not(.scrolled) .logo-text small {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, var(--color-primary-dark) 0%, #151a1d 100%);
+    background: linear-gradient(180deg, var(--color-primary-dark) 0%, #151a1d 100%);
     overflow: hidden;
     display: flex;
     align-items: center;

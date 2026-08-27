@@ -720,7 +720,7 @@ ul {
 .info-item i {
     font-size: 1.5rem;
     color: #ffffff;
-    background-color: var(--color-accent-warm);
+    background: linear-gradient(135deg, var(--color-accent-warm), #e2e8f0);
     width: 60px;
     height: 60px;
     display: flex;

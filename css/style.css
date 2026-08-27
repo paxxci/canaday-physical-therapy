@@ -262,7 +262,8 @@ ul {
     font-weight: 800;
     font-size: 13.5vw; /* Max size to fit on one line */
     line-height: 1;
-    color: var(--color-bg-light);
+    color: var(--color-brand-blue);
+    opacity: 0.08;
     white-space: nowrap;
     width: 100%;
     z-index: 1;
@@ -271,7 +272,7 @@ ul {
 }
 
 .hero-bg-text-blue {
-    color: rgba(58, 90, 110, 0.15); /* Subtle brand blue watermark */
+    color: var(--color-primary-dark); /* Subtle charcoal watermark */
 }
 
 .hero-content {
@@ -685,9 +686,13 @@ ul {
    Contact / Lead Gen Section
    ========================================================================== */
 .contact {
-    background-color: var(--color-bg-light); /* Matches Reviews section background */
+    background-color: var(--color-primary-dark); 
+    color: var(--color-white); /* Ensure base text is light on charcoal bg */
     position: relative;
     overflow: hidden;
+}
+.contact h2, .contact p, .contact h4 {
+    color: var(--color-white) !important; /* Force headings to be white instead of global dark */
 }
 .contact-container {
     display: grid;

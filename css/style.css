@@ -1736,8 +1736,8 @@ body.internal-page .navbar:not(.scrolled) .logo-text small {
 
 .modern-background-text {
     position: absolute;
-    bottom: 0;
-    right: -6.5%; /* Shift to the right to perfectly center its 55% width behind the 38% image */
+    bottom: 0; /* Align with bottom of content container */
+    right: 2%; /* Match image right position */
     left: auto;
     width: 55%; /* Widen to fill empty space between button and right edge */
     max-width: 900px; 

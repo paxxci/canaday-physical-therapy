@@ -1736,7 +1736,7 @@ body.internal-page .navbar:not(.scrolled) .logo-text small {
 
 .modern-background-text {
     position: absolute;
-    bottom: 0;
+    bottom: -40px; /* Shift down to compensate for magnified baseline spacing */
     left: auto;
     right: 0;
     width: 52%; /* Precisely matches the width of the red box (from credentials to right edge) */

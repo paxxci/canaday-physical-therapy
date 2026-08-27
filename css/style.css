@@ -1737,10 +1737,15 @@ body.internal-page .navbar:not(.scrolled) .logo-text small {
 .modern-background-text {
     position: absolute;
     bottom: 0; /* Align with bottom of content container */
-    left: 0;
-    width: 100%;
+    right: 2%; /* Match image right position */
+    left: auto;
+    width: 38%; /* Match image width */
+    max-width: 650px; /* Match image max-width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 11vw;
+    font-size: clamp(1rem, 3.8vw, 4rem); /* Scaled down to fit the 38% container */
     font-weight: 800;
     line-height: 1;
     color: var(--color-bg-light);

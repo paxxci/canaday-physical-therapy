@@ -1735,7 +1735,7 @@ body.internal-page .navbar:not(.scrolled) .logo-text small {
 }
 
 .modern-credentials .credential-item i {
-    color: var(--color-brand-blue);
+    color: var(--color-bg-white);
     font-size: 1.3rem;
 }
 

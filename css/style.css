@@ -593,6 +593,13 @@ ul {
     text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
+@media (max-width: 768px) {
+    .full-services-list {
+        grid-template-columns: max-content;
+        justify-content: center;
+    }
+}
+
 /* ==========================================================================
    About Section (Overlap Layout)
    ========================================================================== */

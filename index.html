@@ -24,8 +24,8 @@
       "image": "https://www.canadaypt.com/logo/image0.png",
       "@id": "https://www.canadaypt.com/",
       "url": "https://www.canadaypt.com/",
-      "telephone": "541-555-1234",
-      "email": "tanner@canadaypt.com",
+      "telephone": "541-290-7073",
+      "email": "tannercanaday.DPT@gmail.com",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Medford",
@@ -372,14 +372,21 @@
                     <i class="fas fa-phone-alt"></i>
                     <div>
                         <h4>Call or Text</h4>
-                        <p>541.555.1234</p>
+                        <p>541.290.7073</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-fax"></i>
+                    <div>
+                        <h4>Fax</h4>
+                        <p>541.612.3233</p>
                     </div>
                 </div>
                 <div class="info-item">
                     <i class="fas fa-envelope"></i>
                     <div>
                         <h4>Email</h4>
-                        <p>tanner@canadaypt.com</p>
+                        <p>tannercanaday.DPT@gmail.com</p>
                     </div>
                 </div>
                 <div class="info-item">
@@ -392,26 +399,27 @@
             </div>
             
             <div class="contact-form-wrapper reveal fade-left delay-1">
-                <form class="contact-form" id="leadForm">
+                <form class="contact-form" id="leadForm" action="https://formsubmit.co/tannercanaday.DPT@gmail.com" method="POST">
                     <h3>Schedule Your Evaluation</h3>
                     
                     <div class="form-group">
-                        <input type="text" id="name" placeholder=" " required>
+                        <input type="hidden" name="_subject" value="New Patient Evaluation Request!">
+                        <input type="text" id="name" name="name" placeholder=" " required>
                         <label for="name">Full Name</label>
                     </div>
                     
                     <div class="form-group">
-                        <input type="tel" id="phone" placeholder=" " required>
+                        <input type="tel" id="phone" name="phone" placeholder=" " required>
                         <label for="phone">Phone Number</label>
                     </div>
                     
                     <div class="form-group">
-                        <input type="email" id="email" placeholder=" " required>
+                        <input type="email" id="email" name="email" placeholder=" " required>
                         <label for="email">Email Address</label>
                     </div>
                     
                     <div class="form-group">
-                        <select id="service" required>
+                        <select id="service" name="service" required>
                             <option value="" disabled selected></option>
                             <option value="neuro">Neurological Rehab</option>
                             <option value="concussion">Concussion / Vestibular</option>

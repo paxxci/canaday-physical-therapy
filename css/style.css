@@ -351,7 +351,7 @@ ul {
    Intro Statement
    ========================================================================== */
 .intro-statement {
-    background-color: var(--color-brand-blue);
+    background: linear-gradient(135deg, var(--color-primary-dark), var(--color-brand-blue));
     border-bottom: 1px solid rgba(0,0,0,0.05);
     position: relative;
     overflow: hidden;

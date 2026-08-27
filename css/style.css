@@ -3,9 +3,9 @@
    ========================================================================== */
 :root {
     /* Brand Colors extracted from mood board */
-    --color-primary-dark: #3A3A3A; /* True Lighter Charcoal (Removed blue/black tones) */
+    --color-primary-dark: #1C2329; /* Cooler Deep Charcoal */
     --color-secondary-dark: #4A5560; /* Cooler Slate Grey */
-    --color-accent-warm: #444444; /* Charcoal Accent (Neutral) */
+    --color-accent-warm: #2C363F; /* Charcoal Accent (Replacing Silver) */
     --color-bg-light: #F1F5F9; /* Ice Silver Background (Replacing Beige) */
     --color-bg-white: #FFFFFF; /* Pure White Background (Replacing Warm White) */
     --color-brand-blue: #3A5A6E; /* Slate Blue (Replacing Green) */

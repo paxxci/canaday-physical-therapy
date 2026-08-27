@@ -1737,24 +1737,24 @@ body.internal-page .navbar:not(.scrolled) .logo-text small {
 .modern-background-text {
     position: absolute;
     bottom: 0;
-    left: 50%; /* Center on viewport */
-    right: auto;
-    width: 100vw; /* Stretch perfectly across entire screen */
+    left: auto;
+    right: 0;
+    width: 52%; /* Precisely matches the width of the red box (from credentials to right edge) */
     max-width: none; 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 11vw; /* Perfect size to stretch edge-to-edge */
+    font-size: 7.2vw; /* Perfectly scaled so 14 chars fit exactly in the 52% box */
     font-weight: 800;
     line-height: 1;
     color: var(--color-bg-light);
-    opacity: 0.05; /* Soften opacity since it's massive */
+    opacity: 0.05; 
     white-space: nowrap;
     z-index: 1; 
     user-select: none;
     pointer-events: none;
-    transform: translateX(-50%) scaleY(2.5); /* Centered and stretched tall */
+    transform: scaleY(2.8); /* Vertical stretch to touch the image */
     transform-origin: bottom center;
 }
 

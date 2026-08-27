@@ -1736,25 +1736,25 @@ body.internal-page .navbar:not(.scrolled) .logo-text small {
 
 .modern-background-text {
     position: absolute;
-    bottom: 0; /* Align with bottom of content container */
-    right: 2%; /* Match image right position */
-    left: auto;
-    width: 55%; /* Widen to fill empty space between button and right edge */
+    bottom: 0;
+    left: 50%; /* Center on screen */
+    right: auto;
+    width: 55%; 
     max-width: 900px; 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: clamp(2rem, 5.5vw, 7rem); /* Massively increase base font size */
+    font-size: clamp(2rem, 5.5vw, 7rem); 
     font-weight: 800;
     line-height: 1;
     color: var(--color-bg-light);
-    opacity: 0.06; /* Slightly lower opacity since it's much bigger now */
+    opacity: 0.06; 
     white-space: nowrap;
-    z-index: 1; /* Drop below image so image fades into text */
+    z-index: 1; 
     user-select: none;
     pointer-events: none;
-    transform: scaleY(2.8); /* Stretch it upwards significantly to touch the image */
+    transform: translateX(-50%) scaleY(2.8); /* Maintain vertical stretch but center horizontally */
     transform-origin: bottom center;
 }
 

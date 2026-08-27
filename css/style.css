@@ -464,8 +464,8 @@ ul {
 }
 
 .service-card-blue {
-    /* True Glassmorphism Recipe - Green Gradient */
-    background: linear-gradient(135deg, rgba(105, 114, 98, 0.8), rgba(105, 114, 98, 0.35));
+    /* True Glassmorphism Recipe - Blue Gradient */
+    background: linear-gradient(135deg, rgba(58, 90, 110, 0.8), rgba(58, 90, 110, 0.35));
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -564,8 +564,8 @@ ul {
     margin: 0 auto;
     padding: 2.5rem;
     
-    /* True Glassmorphism Recipe - Green Gradient */
-    background: linear-gradient(135deg, rgba(105, 114, 98, 0.8), rgba(105, 114, 98, 0.35));
+    /* True Glassmorphism Recipe - Blue Gradient */
+    background: linear-gradient(135deg, rgba(58, 90, 110, 0.8), rgba(58, 90, 110, 0.35));
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     border: 1px solid rgba(255, 255, 255, 0.2);

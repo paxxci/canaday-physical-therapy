@@ -1469,9 +1469,9 @@ footer {
     
     .about-bg-object {
         opacity: 0.5; /* Increased for vibrancy on mobile */
-        width: 100%;
+        width: 70%; /* Reduced to fit vertically */
         left: 50%;
-        top: 60%;
+        top: 55%;
         transform: translate(-50%, -50%);
     }
     

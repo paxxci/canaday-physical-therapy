@@ -1754,7 +1754,7 @@ body.internal-page .navbar:not(.scrolled) .logo-text small {
     z-index: 1; 
     user-select: none;
     pointer-events: none;
-    transform: scaleY(2.8); /* Vertical stretch to touch the image */
+    transform: scaleY(1.8); /* Squish vertically to avoid overlapping image */
     transform-origin: bottom center;
 }
 

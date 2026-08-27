@@ -1741,11 +1741,12 @@ body.internal-page .navbar:not(.scrolled) .logo-text small {
     left: auto;
     width: 38%; /* Match image width */
     max-width: 650px; /* Match image max-width */
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: clamp(1rem, 3.8vw, 4rem); /* Scaled down to fit the 38% container */
+    font-size: clamp(1rem, 2.8vw, 3.5rem); /* Scaled down further to ensure no overflow */
     font-weight: 800;
     line-height: 1;
     color: var(--color-bg-light);

@@ -1471,6 +1471,7 @@ footer {
         opacity: 0.5; /* Increased for vibrancy on mobile */
         width: 100%;
         left: 50%;
+        top: 60%;
         transform: translate(-50%, -50%);
     }
     
